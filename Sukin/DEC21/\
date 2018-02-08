@@ -1,0 +1,15 @@
+%%
+
+[ab]*(abb)[ab]* ;
+
+. {printf("The matched string is %s\n",yytext);}
+\n ;
+
+%%
+ 
+int main()
+{
+yylex();
+return 0;
+}
+
